@@ -12,6 +12,5 @@ def register(request):
             return redirect('blog-home')
     else:
         form = RegisterForm()
-    form = RegisterForm()
     return render(request, 'users/register.html', {'form':form})
 
